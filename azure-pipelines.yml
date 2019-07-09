@@ -8,11 +8,12 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-  trigger:
+
+trigger:
 - master
 
-  pool:
-    vmImage: 'ubuntu-latest'
+pool:
+- vmImage: 'ubuntu-latest'
 
 steps:
 - script: echo Hello, world!
@@ -22,6 +23,8 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+
+
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
