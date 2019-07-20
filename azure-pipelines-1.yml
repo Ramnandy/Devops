@@ -13,5 +13,5 @@ steps:
 - script: echo "my name is ramesh"
   displayName: 'Print the name'
 
-- script: cat access
+- script: echo $SYSTEM_ACCESS_TOKEN
   displayName: 'writing content in file'
