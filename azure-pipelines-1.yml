@@ -16,3 +16,8 @@ steps:
 - task: CmdLine@2
   inputs:
     script: 'cat file2.txt'
+- task: CmdLine@2
+  inputs:
+    script: |
+      echo ${Build.ArtifactStagingDirectory} > workspace
+      cat workspace
