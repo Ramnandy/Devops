@@ -10,10 +10,11 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: echo "my name is ramesh"
-  displayName: 'Print the name'
-
-- bash: $whoami > genfile.txt
-  displayName: 'writing content in file'
-- bash: cat genfile.txt
-  displayName: 'show me content in file'
+- task: creating a file
+  inputs:
+    targetType: 'inline'
+    script: 'echo "hello this is inline text" > file2.txt'
+- task: Reading content in file
+  inputs:
+    targetType: 'inline'
+    script: 'cat file2.txt'
