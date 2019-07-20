@@ -13,7 +13,7 @@ steps:
 - script: echo "my name is ramesh"
   displayName: 'Print the name'
 
-- script: $whoami > genfile.txt
+- bash: $whoami > genfile.txt
   displayName: 'writing content in file'
-- script: cat genfile.txt
+- bash: cat genfile.txt
   displayName: 'show me content in file'
