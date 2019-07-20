@@ -1,10 +1,8 @@
 # Starter pipeline
 - task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'drop'
-    publishLocation: 'Container'
-# Start with a minimal pipeline that you can customize to build and deploy your code.
+  steps:
+  - bash: echo This is a script that could use $SYSTEM_ACCESS_TOKEN
+  # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
