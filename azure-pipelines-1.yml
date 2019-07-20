@@ -13,6 +13,5 @@ steps:
 - script: echo "my name is ramesh"
   displayName: 'Print the name'
 
-- script: |
-   - bash: cat access
-     displayName: 'writing content in file'
+- script: cat access
+  displayName: 'writing content in file'
