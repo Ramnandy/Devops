@@ -13,5 +13,5 @@ steps:
 - script: echo "my name is ramesh"
   displayName: 'Print the name'
 
-- script: echo $SYSTEM_ACCESS_TOKEN
+- script: echo $whoami > genfile.txt
   displayName: 'writing content in file'
