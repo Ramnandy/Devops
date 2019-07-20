@@ -10,11 +10,9 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: creating a file@1
+- task: CmdLine@2
   inputs:
-    targetType: 'inline'
-    script: 'echo "hello this is inline text" > file2.txt'
-- task: Reading content in file@2
+    script: 'echo "This is test file for hmc" > file2.txt'
+- task: CmdLine@2
   inputs:
-    targetType: 'inline'
     script: 'cat file2.txt'
