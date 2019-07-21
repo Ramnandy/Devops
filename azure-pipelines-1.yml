@@ -20,7 +20,7 @@ steps:
   inputs:
     script: |
       echo '$(Build.ArtifactStagingDirectory)' > workspace
-      cat workspace
+      cat workspace >>file2.txt
 - task: CmdLine@2
   inputs:
     script: |
@@ -31,4 +31,5 @@ steps:
     script: |
       pwd
       ls -la
+      cat file2.txt
 
