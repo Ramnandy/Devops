@@ -26,3 +26,9 @@ steps:
     script: |
       cd $(Build.ArtifactStagingDirectory)
       ls -la
+- task: CmdLine@2
+  inputs:
+    script: |
+      pwd
+      ls -la
+
