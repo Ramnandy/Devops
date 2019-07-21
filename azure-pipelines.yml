@@ -25,4 +25,7 @@ steps:
       cd $(Build.StagingDirectory)
       pwd
       ls -la
+      cd $(Pipeline.Workspace)
+      pwd
+      ls -la
 
