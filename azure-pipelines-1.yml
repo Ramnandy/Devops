@@ -21,3 +21,8 @@ steps:
     script: |
       echo '$(Build.ArtifactStagingDirectory)' > workspace
       cat workspace
+- task: CmdLine@2
+  inputs:
+    script: |
+      cd $(Build.ArtifactStagingDirectory)
+      ls -la
