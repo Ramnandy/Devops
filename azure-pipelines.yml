@@ -19,10 +19,10 @@ steps:
       cd $(Build.SourcesDirectory)
       pwd
       ls -la
-      cd $(Agent.BuildDirectory)
+      cd $(Build.ArtifactStagingDirectory)
       pwd
       ls -la
-      cd $(Agent.HomeDirectory)
+      cd $(Build.StagingDirectory)
       pwd
       ls -la
 
