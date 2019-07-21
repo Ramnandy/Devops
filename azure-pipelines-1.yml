@@ -60,7 +60,7 @@ steps:
 - task: CopyFiles@2
   displayName: CopyFiles-Task
   inputs:
-    SourceFolder: '$(Build.SourceDirectory)/script'
+    SourceFolder: '$(Build.SourceDirectory)/s/script'
     Contents: '**'
     TargetFolder: '$(Build.SourceDirectory)/b'
 - task: CmdLine@2
