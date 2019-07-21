@@ -12,7 +12,7 @@ pool:
 steps:
 - task: CmdLine@2
   inputs:
-    script: 'echo "This is test file for hmc" > /home/vsts/work/1/s/file2.txt'
+    script: 'echo "This is test file for hmc" > file2.txt'
 - task: CmdLine@2
   inputs:
     script: 'cat file2.txt'
@@ -40,4 +40,6 @@ steps:
       ./validation.sh
 - task: CmdLine@2
   inputs:
-    script: 'cat $(Agent.BuildDirectory)/script/tfile'
+    script: |
+      cd $(Agent.BuildDirectory)
+      ls -la
