@@ -39,4 +39,4 @@ steps:
       ./validation.sh
 - task: CmdLine@2
   inputs:
-    script: 'cat /script/tfile'
+    script: 'cat /home/vsts/work/1/s/script/tfile'
