@@ -57,3 +57,9 @@ steps:
       cd $(Agent.WorkFolder)
       pwd
       ls -la
+- task: CopyFiles@2
+  displayName: CopyFiles-Task
+  inputs:
+    SourceFolder: '$(Build.SourceDirectory)/script'
+    Contents: '**'
+    TargetFolder: '$(Build.SourceDirectory)/b'
