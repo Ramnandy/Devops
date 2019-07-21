@@ -47,3 +47,6 @@ steps:
       ls -la
       cd $(Agent.BuildDirectory)/s
       ls -la
+- task: CmdLine@2
+  inputs:
+    script: 'cat $(Agent.BuildDirectory)/s/script/tfile'
