@@ -1,9 +1,4 @@
 # Starter pipeline
-- task: CmdLine@2
-  inputs:
-    script: |
-      cd $(Agent.WorkFolder)
-      ls -la
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
@@ -55,3 +50,9 @@ steps:
 - task: CmdLine@2
   inputs:
     script: 'cat $(Agent.BuildDirectory)/s/script/tfile'
+- task: CmdLine@2
+  displayName: Working directory  
+  inputs:
+    script: |
+      cd $(Agent.WorkFolder)
+      ls -la
