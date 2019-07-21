@@ -19,5 +19,5 @@ steps:
 - task: CmdLine@2
   inputs:
     script: |
-      echo ${Build.ArtifactStagingDirectory} > workspace
+      echo "${Build.ArtifactStagingDirectory}" > workspace
       cat workspace
