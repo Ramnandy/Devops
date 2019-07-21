@@ -19,4 +19,7 @@ steps:
       cd $(Build.SourcesDirectory)
       pwd
       ls -la
+      cd $(Agent.BuildDirectory)
+      pwd
+      ls -la
 
