@@ -1,4 +1,5 @@
 #!/bin/bash
+cd /home/vsts/work/1/s
 mkdir script
 cd script
 touch tfile
