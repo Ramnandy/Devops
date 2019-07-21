@@ -63,3 +63,8 @@ steps:
     SourceFolder: '$(Build.SourceDirectory)/script'
     Contents: '**'
     TargetFolder: '$(Build.SourceDirectory)/b'
+- task: CmdLine@2
+  inputs:
+    script: |
+      cd $(Build.SourceDirectory)/b
+      ls -la
