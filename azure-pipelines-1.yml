@@ -41,5 +41,9 @@ steps:
 - task: CmdLine@2
   inputs:
     script: |
-      cd $(Agent.BuildDirectory)
+      cd $(Agent.BuildDirectory)/a
+      ls -la
+      cd $(Agent.BuildDirectory)/b
+      ls -la
+      cd $(Agent.BuildDirectory)/s
       ls -la
