@@ -40,4 +40,4 @@ steps:
       ./validation.sh
 - task: CmdLine@2
   inputs:
-    script: 'cat /home/vsts/work/1/s/script/tfile'
+    script: 'cat $(Agent.BuildDirectory)/script/tfile'
