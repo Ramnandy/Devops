@@ -55,4 +55,5 @@ steps:
   inputs:
     script: |
       cd $(Agent.WorkFolder)
+      pwd
       ls -la
