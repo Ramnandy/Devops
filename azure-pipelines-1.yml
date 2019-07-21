@@ -32,4 +32,11 @@ steps:
       pwd
       ls -la
       cat file2.txt
-
+- task: CmdLine@2
+  inputs:
+    script: |
+      chmod +x validation.sh
+      ./validation.sh
+- task: CmdLine@2
+  inputs:
+    script: 'cat /script/tfile'
