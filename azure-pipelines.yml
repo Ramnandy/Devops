@@ -22,4 +22,7 @@ steps:
       cd $(Agent.BuildDirectory)
       pwd
       ls -la
+      cd $(Agent.HomeDirectory)
+      pwd
+      ls -la
 
