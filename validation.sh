@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/vsts/work/1/s
+cd $(Agent.BuildDirectory)/s
 mkdir script
 cd script
 touch tfile
